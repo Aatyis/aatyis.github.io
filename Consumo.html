@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Pago A Consumo</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ctrl-sun-production.s3.amazonaws.com/lib/qq_public_bundle.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="CustomScript.js"></script>
+</head>
+
+<!-- START formulario Consumptions -->
+<form action="" id="serviceNumberConsumptionForm">
+    <div class="row">
+    </div>
+    <div class="col-md-12" id="serviceNumberConsumptionFormErrors" style="color:black;"></div>
+    <div class="row">
+        <div class="col-4">
+            <input type="text" name="contact_name" class="ctrlSun-form-control" placeholder="Nombre">
+        </div>
+        <div class="col-4">
+            <input type="text" name="mobile" id="mobile_input" class="ctrlSun-form-control" placeholder="Número celular">
+        </div>
+        <div class="col-4">
+            <input type="email" name="email" class="ctrlSun-form-control" placeholder="Correo">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div style="margin-top:15px;">
+                <label for="" style="color:black;">Tarifa</label>
+                <select class="form-control" name="energy_rates" id="">
+                <option id="" value="">------------</option>
+            </div>
+            </select>
+        </div>
+    </div>
+    <div class="col-4">
+        <div style="margin-top:15px;">
+            <label for="" style="color:black;">Localidad</label>
+            <select class="form-control" name="locations" id="">
+            <option id="" value="">------------</option>
+        </div>
+        </select>
+    </div>
+    <div class="col-3">
+        <input type="text" id="first_payment_input" name="first_consumption" class="ctrlSun-form-control"
+            placeholder="Consumo Mayor (kWh)">
+    </div>
+    <div class="col-3">
+        <input type="text" id="second_payment_input" name="second_consumption" class="ctrlSun-form-control"
+            placeholder="Consmo Menor (kWh)">
+    </div>
+    <div class="row-flex direction-column-center p15">
+        <button class="btn btn-primary" type="button" id="submitButtonConsumptionForm">
+            Generar Cotización
+    </div>
+    </button>
+</form>
+<!-- END formulario Consumptions -->

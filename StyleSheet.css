@@ -1,0 +1,114 @@
+/*Rest*/
+body {
+    font-family: "Avenir Light";
+    font-size: 14px;
+}
+
+input[type=text], input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1.5px solid rgb(100,100,100);
+  border-radius: 0px;
+  box-sizing: border-box;
+  background-color: white;
+  outline:none;
+  font-size: 14px;
+  color: rgb(43, 43, 43);
+}
+
+input[type=text]:focus, input[type=email]:focus, select {
+  border: 2px solid rgb(30,30,30);
+}
+
+input[type=text]:hover, input[type=email]:hover, select {
+  border: 1.5px solid rgb(30,30,30);
+  background-color: rgb(236, 236, 236);
+}
+
+.col-4, .col-3, .col-2, .col-10 {
+  margin-bottom: 20px;
+}
+
+select {
+  border:none;
+}
+
+::placeholder {
+  color: rgb(100,100,100);
+  font-family: "Avenir Light";
+  font-size: 14px;
+
+}
+
+
+.btn-primary {
+    background:white;
+    padding: 14px;
+    font-size: 13px;
+    border: 2px;
+    border-style: solid;
+    border-color: linear-gradient(129deg, rgba(74,195,226,1) 0%, rgba(142,223,154,1) 100%);
+    font-family: "Avenir";
+    font-weight: bold;
+    color: rgb(110, 202, 182);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn-primary:hover, btn-primary:focus {
+    background-color: white;
+    border-color: white;
+    color: white;
+    background: linear-gradient(129deg, rgba(74,195,226,1) 0%, rgba(142,223,154,1) 100%);
+}
+/*Dropdown*/
+
+.dropbtn {
+    background:white;
+    padding: 16px;
+    font-size: 14px;
+    border: 2px;
+    border-style: solid;
+    border-color: linear-gradient(129deg, rgba(74,195,226,1) 0%, rgba(142,223,154,1) 100%);
+    font-family: "Avenir";
+    font-weight: bold;
+    color: rgb(110, 202, 182);
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+    border-color: white;
+    color: white;
+    background:linear-gradient(129deg, rgba(74,195,226,1) 0%, rgba(142,223,154,1) 100%);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
