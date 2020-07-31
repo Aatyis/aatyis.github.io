@@ -12,77 +12,68 @@
     <script src="CustomScript.js"></script>
 </head>
 
-<body>
 
-    <!-- START formulario Payments -->
-    <form action="" id="paymentToConsumptionForm">
-        <div class="row">
-            <div class="col-md-12" id="paymentToConsumptionFormErrors" style="color:black;"></div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <input type="text" name="contact_name" class="ctrlSun-form-control" placeholder="Nombre">
-            </div>
-                
-            <div class="col-4">
-                <input type="text" name="mobile" id="mobile_input" class="ctrlSun-form-control" placeholder="Número celular">
-            </div>
-            <div class="col-4">
-                <input type="email" name="email" class="ctrlSun-form-control" placeholder="Correo">
-            </div>
+
+<!-- START formulario Payments -->
+<form action="" id="paymentToConsumptionForm">
+    <div class="row">
+        <div class="col-md-12" id="paymentToConsumptionFormErrors" style="color:black;"></div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <input type="text" name="contact_name" class="ctrlSun-form-control" placeholder="Nombre">
         </div>
 
-        <div class="row">
-            <div class="col-4">
-                <div style="margin-top:15px;">
-                    <label for="" style="color:black;">Localidad</label>
-                    <select class="form-control select-select2 select2-hidden-accessible inverter-options"
-                        name="locations" id="">
-                        <option id="" value="">------------</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="col-2">
-                <div style="margin-top:15px;">
-                    <label for="" style="color:black;">Tarifa</label>
-                    <select class="form-control select-select2 select2-hidden-accessible inverter-options"
-                        name="energy_rates" id="">
-                        <option id="" value="">------------</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="col-3">
-                <div class="first_payment" style="margin-top:15px;">
-                    <input type="text" id="first_payment_input" name="first_payment" class="ctrlSun-form-control"
-                        placeholder="Monto mayor (MXN)">
-                </div>
-            </div>
-            <div class="col-3">
-                <div id="second_payment" class="second_payment" style="margin-top:15px;">
-                    <input type="text" id="second_payment_input" name="second_payment" class="ctrlSun-form-control"
-                        placeholder="Monto menor (MXN)">
-                </div>
-            </div>
-
+        <div class="col-4">
+            <input type="text" name="mobile" id="mobile_input" class="ctrlSun-form-control"
+                placeholder="Número celular">
         </div>
-        <div class="row-flex direction-column-center p15">
-            <button class="btn btn-primary" type="button" id="submitButtonPaymentForm">
-                Generar Cotización
-            </button>
+        <div class="col-4">
+            <input type="email" name="email" class="ctrlSun-form-control" placeholder="Correo">
         </div>
-    </form>
-    <!-- END formulario Payments -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-            window.init_form_payment(
-                'TOKEN',
-                'paymentToConsumptionForm',
-                'paymentToConsumptionFormErrors'
-            );
-        });
-    </script>
-</body>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <div style="margin-top:15px;">
+                <label for="" style="color:black;">Localidad</label>
+                <select class="form-control select-select2 select2-hidden-accessible inverter-options" name="locations"
+                    id="">
+                    <option id="" value="">------------</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div style="margin-top:15px;">
+                <label for="" style="color:black;">Tarifa</label>
+                <select class="form-control select-select2 select2-hidden-accessible inverter-options"
+                    name="energy_rates" id="">
+                    <option id="" value="">------------</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-3">
+            <div class="first_payment" style="margin-top:15px;">
+                <input type="text" id="first_payment_input" name="first_payment" class="ctrlSun-form-control"
+                    placeholder="Monto mayor (MXN)">
+            </div>
+        </div>
+        <div class="col-3">
+            <div id="second_payment" class="second_payment" style="margin-top:15px;">
+                <input type="text" id="second_payment_input" name="second_payment" class="ctrlSun-form-control"
+                    placeholder="Monto menor (MXN)">
+            </div>
+        </div>
+
+    </div>
+    <div class="row-flex direction-column-center p15">
+        <button class="btn btn-primary" type="button" id="submitButtonPaymentForm">
+            Generar Cotización
+        </button>
+    </div>
+</form>
+<!-- END formulario Payments -->
 
 </html>
